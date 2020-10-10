@@ -19,6 +19,7 @@
  *
  * TODO:
  * 1) Update so it doesn't scan the whole sheet all the time.
+ * 2) Probably needs better error handling.
  *
  *
  */
@@ -144,7 +145,7 @@ function saveRecurring(recurring) {
 
 function onOpen() {
   var ui = SpreadsheetApp.getUi();
-  ui.createMenu("Grant's Scripts")
+  ui.createMenu("Scripts")
       .addItem('Find Recurring', 'findRecurring')
       .addItem('Add Assessment', 'addAssessment')
       .addItem('Add Category', 'addCategory')
